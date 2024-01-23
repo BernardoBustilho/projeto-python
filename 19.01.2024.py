@@ -33,20 +33,20 @@ result = renda(renda_familiar)
 def renda ():
     if(renda_familiar == 1.412):
         resp = print('Você tem direito a uma bolsa de até 35%')
-        saida = ("Parabéns, bons estudos")
+        
 
     elif(renda_familiar > 1.412):
         resp = print('Você tem direito a uma bolsa de até 15%')
-        saida = ("Parabéns, bons estudos")
+        
 
     elif(renda_familiar < 1.412):
         resp = print('Você tem direito a uma bolsa de até 50%')
-        saida = ("Parabéns, bons estudos")
+        
     
     elif(renda_familiar == 0):
         resp = print('Você tem direito a uma bolsa de até 100%')
-        saida = ("Parabéns, bons estudos")
-        return saida 
+
+        return resp
 
 
 
@@ -63,7 +63,7 @@ else:
        resp = print('Você não pode se matricular na faculdade')
 
 dados_alunos.append("Nome: "+nome+"\nSobrenome:"+sobrenome+"\nIdade: "+str(idade)+"\nENEM:"+enem+"\nEmail: "+email+"\nRenda Familiar"+str(renda_familiar)+"\nFiliação: "+filiação+"\nCPF :"+cpf+"\nEscolaridade: "+escolaridade)
-
+print(dados_alunos)
      
 
 
